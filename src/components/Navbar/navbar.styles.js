@@ -230,7 +230,6 @@ export const CloseMenu = styled(RxCross2)`
     position: absolute;
     top: 20px;
     right: 20px;
-
 `;
 export const SmallScreenLinks = styled.ul`
     list-style: none;

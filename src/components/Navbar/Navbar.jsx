@@ -47,7 +47,7 @@ const Navbar = () => {
         <MenuIcon onClick={() => setToggleMenu(true)}/>
         {toggleMenu && (
           <SmallScreen>
-            <CloseMenu onClick={()=> setToggleMenu(false)} toggle={true}/>
+            <CloseMenu onClick={()=> setToggleMenu(false)}/>
             <SmallScreenLinks>
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
               <li><a href="#projects" onClick={() => setToggleMenu(false)}>Projects</a></li>
