@@ -6,11 +6,12 @@ export const ProjectsCard = ({imgUrl, title, description, tech}) => {
             <img src={imgUrl} alt={imgUrl}/>
             <h4>{title}</h4>
             <ProjectCardDivider />
+
             <p>{description}</p>
 
             <TechContainer>
                 {tech.map((item)=>(
-                    <TechItem>{item}</TechItem>
+                    <TechItem key={item}>{item}</TechItem>
                 ))}
             </TechContainer>
             

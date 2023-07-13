@@ -3,9 +3,9 @@ import { styled } from "styled-components";
 export const HeroContainer = styled.div`
     width: 100%;
     height: 100%;
-    background: var(--color-navy);
     display: flex;
     flex-direction: column;
+    z-index: -1;
 `;
 
 export const LeftSideContainer = styled.div`
@@ -14,6 +14,7 @@ export const LeftSideContainer = styled.div`
     font-family: var(--font-base);
     padding: 8rem 0 0 5rem;
     margin-bottom: 12rem;
+    z-index: 1;
 
     h1 {
         font-weight: 700;

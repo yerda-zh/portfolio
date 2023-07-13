@@ -12,9 +12,8 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-navy);
     padding: 1rem 2rem;
-
+    background: var(--color-navy);
     @media screen and (max-width: 640px) {
         padding: 1rem;
     }
@@ -27,6 +26,7 @@ export const PortfolioDiv = styled.div`
     align-items: center;
     justify-content: flex-start;
     color: var(--color-white);
+    cursor: default;
 
     p {
         font-family: var(--font-base);

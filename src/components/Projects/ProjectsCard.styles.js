@@ -5,6 +5,7 @@ export const ProjectCardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--color-l-blue);
 
 `;
 export const ProjectCardDivider = styled.div`

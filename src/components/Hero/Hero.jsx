@@ -2,7 +2,7 @@ import { HeroContainer, LeftSideContainer} from "./hero.styles";
 
 const Hero = () => {
   return (
-    <HeroContainer id="home">
+    <HeroContainer id="home" className="app__bg">
       <LeftSideContainer>
         <h1>
           Hi, I'm <br />
@@ -18,6 +18,7 @@ const Hero = () => {
           </button>
         </div>
       </LeftSideContainer>
+      
     </HeroContainer>
   );
 };

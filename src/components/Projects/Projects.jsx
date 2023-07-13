@@ -4,9 +4,9 @@ import {ProjectsCard} from './ProjectsCard';
 const Projects = () => {
   return (
     <ProjectsContainer>
+      
+      <h2>Projects</h2>
       <ProjectsDivider/>
-      <h1>Projects</h1>
-
       <div>
         <ProjectsCard 
           imgUrl=""
