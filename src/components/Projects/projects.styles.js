@@ -19,14 +19,20 @@ export const ProjectsContainer = styled.div`
         -webkit-text-fill-color: transparent;
         padding: 2rem 0 1rem 4rem;
     }
-
-    div {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
 `;
+
+export const ProjectsDiv = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 3rem;
+    
+    align-self: center;
+    /* place-items: center; */
+    column-gap: 2rem;
+    row-gap: 3rem;
+    margin: 0 5rem;
+`;
+
 export const ProjectsDivider = styled.div`
     margin: 0 0 4rem 4rem;
     width: 120px;

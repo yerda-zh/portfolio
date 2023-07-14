@@ -27,7 +27,11 @@ export const PortfolioDiv = styled.div`
     justify-content: flex-start;
     color: var(--color-white);
     cursor: default;
+    transition: 0.3s ease;
 
+    &:hover {
+        color: var(--color-l-blue);
+    }
     p {
         font-family: var(--font-base);
         font-weight: 700;
