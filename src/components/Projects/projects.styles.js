@@ -19,24 +19,60 @@ export const ProjectsContainer = styled.div`
         -webkit-text-fill-color: transparent;
         padding: 2rem 0 1rem 4rem;
     }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            padding: 1.7rem 0 1rem 3rem;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        h2 {
+            font-size: 30px;
+            line-height: 20px;
+        }
+    }
 `;
 
 export const ProjectsDiv = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 3rem;
-    
-    align-self: center;
-    /* place-items: center; */
-    column-gap: 2rem;
-    row-gap: 3rem;
-    margin: 0 5rem;
+    padding-bottom: 3rem;
+    place-items: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    margin: 0 7rem;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 2rem;
+        padding: 2rem;
+    }
+    @media screen and (max-width: 540px) {
+        margin: 0 1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    @media screen and (max-width: 360px) {
+        margin: 0 .5rem;
+        padding: .5rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 `;
 
 export const ProjectsDivider = styled.div`
-    margin: 0 0 4rem 4rem;
+    margin: 0 0 3rem 4rem;
     width: 120px;
     height: 5px;
     border-radius: 10px;
     background: linear-gradient(304deg, #F4EEFF 0%, #DCD6F7 100%);
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 4px;
+    }
+    @media screen and (max-width: 540px) {
+        width: 80px;
+        height: 3px;
+    }
 `;

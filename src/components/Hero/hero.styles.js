@@ -4,16 +4,19 @@ export const HeroContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     z-index: -1;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+    }
 `;
 
 export const LeftSideContainer = styled.div`
-    width: 100%;
+    width: 75%;
     color: var(--color-white);
     font-family: var(--font-base);
-    padding: 8rem 0 0 5rem;
-    margin-bottom: 12rem;
+    padding: 8rem 2rem 10rem 5rem;
     z-index: 1;
 
     h1 {
@@ -32,7 +35,7 @@ export const LeftSideContainer = styled.div`
         font-size: 24px;
         line-height: 40px;
         font-weight: 400;
-        max-width: 750px;
+        max-width: 100%;
         padding-bottom: 3rem;
         opacity: 0.7;
     }
@@ -89,7 +92,7 @@ export const LeftSideContainer = styled.div`
 
     @media screen and (min-width: 1800px) {
 
-        padding: 16rem 0 0 12rem;
+        padding: 16rem 2rem 10rem 12rem;
 
         h1 {
             font-size: 90px;
@@ -120,9 +123,15 @@ export const LeftSideContainer = styled.div`
             border-radius: 100px;
         }
     }
+
+    @media screen and (max-width: 1100px) {
+
+        width: 100%;
+        padding: 8rem 5rem 10rem 5rem;
+    }
     @media screen and (max-width: 1024px) {
 
-        padding: 5rem 0 0 3rem;
+        padding: 5rem 3rem 5rem 3rem;
 
         h1 {
             font-size: 55px;
@@ -131,27 +140,25 @@ export const LeftSideContainer = styled.div`
 
         p {
             line-height: 35px;
-            max-width: 690px;
         } 
     }
     @media screen and (max-width: 768px) {
 
-    padding: 4rem 0 0 2rem;
+        padding: 4rem 2rem 2rem 2rem;
 
-    h1 {
-        font-size: 50px;
-        line-height: 55px;
-    }
+        h1 {
+            font-size: 50px;
+            line-height: 55px;
+        }
 
-    p {
-        font-size: 20px;
-        line-height: 25px;
-        max-width: 600px;
-    } 
+        p {
+            font-size: 20px;
+            line-height: 25px;
+        } 
     }
     @media screen and (max-width: 640px) {
 
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
 
         h1 {
             font-size: 40px;
@@ -162,7 +169,6 @@ export const LeftSideContainer = styled.div`
         p {
             font-size: 22px;
             line-height: 25px;
-            margin-right: 2rem;
         }
 
         div {
@@ -196,4 +202,32 @@ export const LeftSideContainer = styled.div`
         }
     }
 
+`;
+
+export const ImgContainer = styled.div`
+    margin-right: 3rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        animation: updown 3s linear infinite;
+
+        @keyframes updown {
+            0% {
+                transform: translateY(-20px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin: 0 4rem 4rem 4rem;
+        display: flex;
+        justify-content: center;
+    }
 `;

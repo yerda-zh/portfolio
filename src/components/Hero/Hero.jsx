@@ -1,4 +1,4 @@
-import { HeroContainer, LeftSideContainer} from "./hero.styles";
+import { HeroContainer, LeftSideContainer, ImgContainer} from "./hero.styles";
 
 const Hero = () => {
   return (
@@ -18,7 +18,9 @@ const Hero = () => {
           </button>
         </div>
       </LeftSideContainer>
-      
+      <ImgContainer>
+        <img src={"/images/header-img.svg"} alt="banner"/>
+      </ImgContainer>
     </HeroContainer>
   );
 };

@@ -5,15 +5,16 @@ export const ProjectCardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     border-radius: 15px;
-    max-width: 400px;
-    background: var(--color-navy);
-    box-shadow: 0 0 20px rgb(244 238 255 / 0.2);
+    max-width: 85%;
+    background: linear-gradient(165deg, #2E3542 0%, #1A212F 100%);
+    transition: 0.3s ease-in-out;
 
     img {
         width: 100%;
         height: 100%;
-        padding-bottom: 2rem;
+        padding-bottom: 1.5rem;
         border-radius: 15px 15px 0 0;
     }
 
@@ -22,15 +23,49 @@ export const ProjectCardContainer = styled.div`
         font-weight: bold;
         padding: .5rem 0;
         color: var(--color-l-blue);
-        font-size: 24px;
+        font-size: 1.5rem;
+        cursor: default;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: var(--color-m-purple);
+        }
     }
 
     p {
         width: 100%;
-        padding: 0 50px;
-        line-height: 24px;
+        padding: 0 1.8rem;
+        line-height: 1.5rem;
         text-align: justify;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px rgb(244 238 255 / 0.3);
+        transform: scale(1.03);
+    }
+
+    @media screen and (max-width: 540px) {
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            padding: 0 1.25rem;
+            font-size: .8rem;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        img {
+            padding-bottom: 1rem;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            padding: 0 10px;
+            font-size: .6rem;
+            margin: 1rem 0;
+        }
     }
 
 `;
@@ -43,6 +78,7 @@ export const ProjectCardDivider = styled.hr`
 export const TechContainer = styled.ul`
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 1rem;
     list-style: none;
@@ -50,15 +86,27 @@ export const TechContainer = styled.ul`
 
 export const TechItem = styled.li`
     font-size: 1.1rem;
+    margin: .4rem;
     font-weight: bold;
     color: var(--color-m-purple);
+
+    @media screen and (max-width: 540px) {
+        font-size: .9rem;
+    }
+    @media screen and (max-width: 425px) {
+        font-size: .7rem;
+    }
 `;
 
 export const Buttons = styled.div`
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: 425px) {
+        margin: 1rem 0;
+    }
     
 `;
 export const ButtonContainer = styled.div`
@@ -110,5 +158,21 @@ export const ButtonContainer = styled.div`
         width: 100%;
         height: 100%;
         position: absolute;
+    }
+
+    @media screen and (max-width: 540px) {
+        width: 100px;
+        height: 30px;
+        button {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 80px;
+        height: 25px;
+        button {
+            font-size: 10px;
+        }
     }
 `;
