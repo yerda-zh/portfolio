@@ -37,7 +37,7 @@ export const LeftSideContainer = styled.div`
         font-weight: 400;
         max-width: 100%;
         padding-bottom: 3rem;
-        opacity: 0.7;
+        opacity: 0.75;
     }
 
     div {
@@ -52,6 +52,7 @@ export const LeftSideContainer = styled.div`
 
     button {
         font-weight: 700;
+        font-family: var(--font-base);
         border: 1.5px solid #F4EEFF;
         color: #fff;
         padding: 18px 34px;
@@ -158,16 +159,15 @@ export const LeftSideContainer = styled.div`
     }
     @media screen and (max-width: 640px) {
 
-        margin-bottom: 3rem;
 
         h1 {
             font-size: 40px;
             line-height: 45px;
-            padding-bottom: 3rem;
+            padding-bottom: 1rem;
         }
 
         p {
-            font-size: 22px;
+            font-size: 20px;
             line-height: 25px;
         }
 
@@ -193,7 +193,6 @@ export const LeftSideContainer = styled.div`
         h1 {
             font-size: 35px;
             line-height: 40px;
-            padding-bottom: 2rem;
         }
 
         p {
@@ -226,7 +225,7 @@ export const ImgContainer = styled.div`
     }
 
     @media screen and (max-width: 1200px) {
-        margin: 0 4rem 4rem 4rem;
+        margin: 0 2rem 3rem 2rem;
         display: flex;
         justify-content: center;
     }

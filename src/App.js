@@ -1,5 +1,5 @@
 import './App.css';
-import {AboutMe, Footer, Hero, Navbar, Projects, Technologies} from './components';
+import {Contact, Footer, Hero, Navbar, Projects, Technologies} from './components';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Hero/>
       <Projects/>
       <Technologies/>
-      <AboutMe/>
+      <Contact/>
       <Footer/>
     </div>
   );

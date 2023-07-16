@@ -2,20 +2,25 @@ import {TechDiv, TechTitle, TechContainer, FrontDev, FrontDevTitle, StateDev, St
 import {FaReact} from 'react-icons/fa';
 import {SiRedux} from 'react-icons/si';
 import {DiCss3} from 'react-icons/di';
+import '../../animations/animation.css';
+import { useInView } from 'react-intersection-observer';
 
 const Technologies = () => {
+  const {ref: leftRef, inView: isLeftVisible} = useInView();
+  const {ref: techRef, inView: isTechVisible} = useInView();
+
   return (
     <TechContainer id='technologies' className='app__bg'>
       <TechTitle>
-        <h2>Technologies</h2>
-        <TitleDivider/>
+        <h2 ref={leftRef} className={`${isLeftVisible ? 'slide-right' : ''}`}>Technologies</h2>
+        <TitleDivider ref={leftRef} className={`${isLeftVisible ? 'slide-right' : ''}`}/>
         <p>
           I've worked with a range of technologies in the web development world.
           Here are some of them:
         </p>
       </TechTitle>
       <TechDiv>
-        <FrontDev>
+        <FrontDev ref={techRef} className={`${isTechVisible ? 'slide-left-front' : ''}`}>
           <FrontDevTitle>
             <FaReact/>
             <h3>
@@ -23,10 +28,10 @@ const Technologies = () => {
             </h3>
           </FrontDevTitle>
           <p>
-            Experience with React
+            Experience with React, HTML-5, Javascript
           </p>
         </FrontDev>
-        <StateDev>
+        <StateDev ref={techRef} className={`${isTechVisible ? 'slide-left-state' : ''}`}>
           <StateDevTitle>
             <SiRedux/>
             <h3>
@@ -34,10 +39,10 @@ const Technologies = () => {
             </h3>
           </StateDevTitle>
           <p>
-            Experience with Redux Thunk, Redux saga, API Context, Reducers
+            Experience with Redux Thunk, Redux Saga, API Context, Reducers
           </p>
         </StateDev>
-        <UIDev>
+        <UIDev ref={techRef} className={`${isTechVisible ? 'slide-left-ui' : ''}`}>
           <UIDevTitle>
             <DiCss3/>
             <h3>
@@ -45,7 +50,7 @@ const Technologies = () => {
             </h3> 
           </UIDevTitle>
           <p>
-            Experience with CSS, SCSS, Styled Components, Tailwind
+            Experience with CSS-3, SCSS, Styled Components, Tailwind, Bootstrap
           </p>
         </UIDev>
       </TechDiv>

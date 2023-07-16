@@ -29,7 +29,7 @@ const Navbar = () => {
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#technologies">Tech</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </Ul>
       <SocialIconsContainer>
         <SocialIcon href="https://github.com/yerda-zh">
@@ -52,7 +52,7 @@ const Navbar = () => {
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
               <li><a href="#projects" onClick={() => setToggleMenu(false)}>Projects</a></li>
               <li><a href="#technologies" onClick={() => setToggleMenu(false)}>Tech</a></li>
-              <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
+              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
             </SmallScreenLinks>
           </SmallScreen>
         )}

@@ -5,7 +5,7 @@ export const TechContainer = styled.div`
     font-family: var(--font-base);
     width: 100%;
     height: 100%;
-    padding: 2rem 3rem 5rem 3rem;
+    padding: 2rem 2rem 5rem 2rem;
 `;
 export const TechTitle = styled.div`
 
@@ -39,6 +39,10 @@ export const TechTitle = styled.div`
             font-size: 30px;
             line-height: 20px;
         }
+        p {
+            font-size: .9rem;
+            line-height: 20px;
+        }
     }
 `;
 export const TitleDivider = styled.div`
@@ -60,7 +64,7 @@ export const TitleDivider = styled.div`
 export const TechDiv = styled.div`
     display: grid;
     grid-template-columns: 1fr 1.1fr 1fr;
-    width: fit-content;
+    
     margin: 0 10rem;
     
     h3 {
@@ -77,16 +81,16 @@ export const TechDiv = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 5rem;
+        padding: 0 4rem;
         margin: 0;
         width: 100%;
     }
     @media screen and (max-width: 768px) {
         width: 100%;
-        padding: 0 3rem;
+        padding: 0 2rem;
     }
     @media screen and (max-width: 460px) {
-        padding: 0 1rem;
+        padding: 0 .5rem;
     }
 `;
 export const FrontDev = styled.div`
@@ -94,7 +98,7 @@ export const FrontDev = styled.div`
     flex-direction: column;
     margin: .5rem;
     padding: .5rem 2rem;
-    background: #1A212F;
+    background: #1F2941;
     border-radius: 8px;
     transition: .2s ease-in-out;
 
@@ -109,13 +113,17 @@ export const FrontDevTitle = styled.div`
     font-size: 1.3rem;
     color: var(--color-l-blue);
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.1rem;
+    }
 `;
 export const StateDev = styled.div`
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: .5rem 2rem;
-    background: #1A212F;
+    background: #1F2941;
     border-radius: 8px;
 
     transition: .2s ease-in-out;
@@ -130,13 +138,17 @@ export const StateDevTitle = styled.div`
     justify-content: center;
     font-size: 1.3rem;
     color: var(--color-l-blue);
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 `;
 export const UIDev = styled.div`
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: .5rem 2rem;
-    background: #1A212F;
+    background: #1F2941;
     border-radius: 8px;
 
     transition: .2s ease-in-out;
@@ -151,4 +163,8 @@ export const UIDevTitle = styled.div`
     justify-content: center;
     font-size: 1.3rem;
     color: var(--color-l-blue);
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.1rem;
+    }
 `;

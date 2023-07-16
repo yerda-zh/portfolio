@@ -8,7 +8,7 @@ export const ProjectCardContainer = styled.div`
     height: 100%;
     border-radius: 15px;
     max-width: 85%;
-    background: linear-gradient(165deg, #2E3542 0%, #1A212F 100%);
+    background: linear-gradient(165deg, #121B32 0%, #1F2941 100%);
     transition: 0.3s ease-in-out;
 
     img {
@@ -124,7 +124,8 @@ export const ButtonContainer = styled.div`
         width: 100%;
         height: 100%;
         font-weight: 700;
-        border: 1.5px solid #DCD6F7;
+        font-family: var(--font-base);
+        border: 1.5px solid #D1D7F4;
         color: #fff;
         padding: 5px 18px;
         font-size: 16px;
@@ -144,7 +145,7 @@ export const ButtonContainer = styled.div`
         width: 0%;
         height: 100%;
         position: absolute;
-        background: linear-gradient(73deg, #DCD6F7 0%, #A6B1E1 100%);
+        background: linear-gradient(160deg, #D1D7F4 0%, #A6B1E1 100%);
         left: 0;
         top: 0;
         z-index: -1;

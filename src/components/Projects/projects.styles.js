@@ -44,18 +44,18 @@ export const ProjectsDiv = styled.div`
     row-gap: 2rem;
     margin: 0 7rem;
 
-    @media screen and (max-width: 768px) {
-        margin: 0 2rem;
-        padding: 2rem;
-    }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1200px) {
         margin: 0 1rem;
         padding: 1rem;
+        padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 540px) {
+        margin: 0 .5rem;
+        padding: .5rem;
+        padding-bottom: 2rem;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
     @media screen and (max-width: 360px) {
-        margin: 0 .5rem;
-        padding: .5rem;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 `;
