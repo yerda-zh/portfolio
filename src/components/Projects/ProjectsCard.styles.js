@@ -107,7 +107,6 @@ export const Buttons = styled.div`
     @media screen and (max-width: 425px) {
         margin: 1rem 0;
     }
-    
 `;
 export const ButtonContainer = styled.div`
     width: 120px;

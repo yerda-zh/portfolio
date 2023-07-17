@@ -24,6 +24,13 @@ export const ContactImg = styled.div`
         height: 100%;
         margin-right: 3rem;
     }
+    @media screen and (min-width: 2000px) {
+        img {
+            padding: 3rem 4rem 0 4rem;
+            margin-right: 15rem;
+        }
+    }
+
     @media screen and (max-width: 840px) {
         img {
             padding: 3rem 4rem 0 4rem;
@@ -56,7 +63,7 @@ export const GetInTouchContainer = styled.div`
 
     input, textarea{
         width: 100%;
-        background: rgba(166, 177, 225, 0.5);
+        background: rgba(166, 177, 225, 0.6);
         border: 1px solid rgba(255, 255, 255, 0.6);
         border-radius: 15px;
         padding: 1.2rem 1.6rem;

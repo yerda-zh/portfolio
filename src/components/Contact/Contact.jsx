@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {ContactContainer, ContactImg, GetInTouchContainer, ContactA, ContactB, GetInTouchDivider} from './contact.styles';
 import '../../animations/animation.css';
 import { useInView } from 'react-intersection-observer';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const {ref: leftRef, inView: isLeftVisible} = useInView();
   const {ref: conRef, inView: isConVisible} = useInView();
+  
+  const form = useRef();
 
   const formInitialDetails = {
     firstName: '',
@@ -16,7 +19,7 @@ const Contact = () => {
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState('');
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -25,27 +28,21 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // to prevent the page from reloading when the user submits the form
-    setButtonText('Sending...');
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    setButtonText('Send');
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    
-    if (result.code === 200) {
-      setStatus({success: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({success: false, message: 'Something went wrong, please try again later.'})
-    }
+    setButtonText('Sending...');
+
+    emailjs.sendForm('service_3w7ra7g', 'template_nljkrhp', form.current, 'qjwE2usd5VuYlT6S6')
+      .then((result) => {
+          setStatus(result.status);
+          setFormDetails(formInitialDetails);
+          setButtonText('Send');
+      }, (error) => {
+          console.log(error.text);
+      });
   };
+
 
   return (
     <ContactContainer id="contact">
@@ -57,7 +54,7 @@ const Contact = () => {
         <h2>Get In Touch</h2>
         <GetInTouchDivider />
 
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <ContactA>
             <input
               type="text"
@@ -66,6 +63,7 @@ const Contact = () => {
               onChange={(event) =>
                 onFormUpdate("firstName", event.target.value)
               }
+              name="user_firstname" 
               required
             />
             <input
@@ -73,6 +71,7 @@ const Contact = () => {
               value={formDetails.lastName}
               placeholder="Last Name"
               onChange={(event) => onFormUpdate("lastName", event.target.value)}
+              name="user_lastname"
             />
             <input
               type="email"
@@ -80,12 +79,14 @@ const Contact = () => {
               placeholder="Email Address"
               onChange={(event) => onFormUpdate("email", event.target.value)}
               required
+              name="user_email"
             />
             <input
               type="text"
               value={formDetails.topic}
               placeholder="Topic"
               onChange={(event) => onFormUpdate("topic", event.target.value)}
+              name="user_topic"
             />
           </ContactA>
           <ContactB>
@@ -95,14 +96,15 @@ const Contact = () => {
               placeholder="Message"
               onChange={(event) => onFormUpdate("message", event.target.value)}
               required
+              name="message" 
             />
           </ContactB>
           <button type="submit">
             <span>{buttonText}</span>
           </button>
-          {status.message && (
-            <p className={status.success === false ? "danger" : "success"}>
-              {status.message}
+          {status !== '' && (
+            <p>
+              {status === 200 ? 'Message sent successfully' : 'Something went wrong, please try again later.'}
             </p>
           )}
         </form>

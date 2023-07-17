@@ -104,7 +104,7 @@ export const LeftSideContainer = styled.div`
         p {
             font-size: 32px;
             line-height: 60px;
-            max-width: 1000px;
+            max-width: max-content;
             padding-bottom: 6rem;
         }
 
@@ -222,6 +222,13 @@ export const ImgContainer = styled.div`
                 transform: translateY(-20px);
             }
         }
+    }
+    
+
+    @media screen and (min-width: 2192px) {
+        margin: 0 8rem 3rem 8rem;
+        display: flex;
+        justify-content: center;
     }
 
     @media screen and (max-width: 1200px) {

@@ -101,9 +101,9 @@ export const FrontDev = styled.div`
     background: #1F2941;
     border-radius: 8px;
     transition: .2s ease-in-out;
-
+    cursor: default;
     &:hover {
-        transform: scale(1.05);
+        background: #121B32;;
     }
 `;
 
@@ -113,7 +113,7 @@ export const FrontDevTitle = styled.div`
     font-size: 1.3rem;
     color: var(--color-l-blue);
     justify-content: center;
-
+    
     @media screen and (max-width: 768px) {
         font-size: 1.1rem;
     }
@@ -125,11 +125,10 @@ export const StateDev = styled.div`
     padding: .5rem 2rem;
     background: #1F2941;
     border-radius: 8px;
-
     transition: .2s ease-in-out;
-
+    cursor: default;
     &:hover {
-        transform: scale(1.05);
+        background: #121B32;;
     }
 `;
 export const StateDevTitle = styled.div`
@@ -150,11 +149,11 @@ export const UIDev = styled.div`
     padding: .5rem 2rem;
     background: #1F2941;
     border-radius: 8px;
-
     transition: .2s ease-in-out;
+    cursor: default;
 
     &:hover {
-        transform: scale(1.05);
+        background: #121B32;;
     }
 `;
 export const UIDevTitle = styled.div`
