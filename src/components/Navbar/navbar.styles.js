@@ -162,19 +162,19 @@ export const SocialIcon = styled.a`
         }
     }
     @media screen and (max-width: 450px) {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         padding: 0.3rem;
-        margin-right: 0.7rem;
+        margin-right: 0.3rem;
 
         &::before {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
         }
     }
 `;
 
-
+// smallscreen
 export const SmallScreenContainer = styled.div`
     display: none;
     

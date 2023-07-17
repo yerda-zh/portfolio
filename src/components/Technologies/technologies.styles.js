@@ -6,6 +6,8 @@ export const TechContainer = styled.div`
     width: 100%;
     height: 100%;
     padding: 2rem 2rem 5rem 2rem;
+    max-width: 100%!important; height: auto; overflow: hidden!important;
+
 `;
 export const TechTitle = styled.div`
 

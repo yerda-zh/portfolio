@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     display: flex;
     flex-direction: row;
     z-index: -1;
-
+    max-width: 100%!important; height: auto; overflow: hidden!important;
     @media screen and (max-width: 1100px) {
         flex-direction: column;
     }

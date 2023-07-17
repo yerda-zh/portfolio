@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
     width: 100%;
     height: 100%;
     color: #fff;
+    max-width: 100%!important; height: auto; overflow: hidden!important;
 
     h2 {
         font-weight: 700;

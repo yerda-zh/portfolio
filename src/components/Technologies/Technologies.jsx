@@ -19,8 +19,8 @@ const Technologies = () => {
           Here are some of them:
         </p>
       </TechTitle>
-      <TechDiv>
-        <FrontDev ref={techRef} className={`${isTechVisible ? 'slide-left-front' : ''}`}>
+      <TechDiv ref={techRef} >
+        <FrontDev className={`${isTechVisible ? 'slide-left-front' : ''}`}>
           <FrontDevTitle>
             <FaReact/>
             <h3>
@@ -31,7 +31,7 @@ const Technologies = () => {
             Experience with React, HTML-5, Javascript
           </p>
         </FrontDev>
-        <StateDev ref={techRef} className={`${isTechVisible ? 'slide-left-state' : ''}`}>
+        <StateDev className={`${isTechVisible ? 'slide-left-state' : ''}`}>
           <StateDevTitle>
             <SiRedux/>
             <h3>
@@ -42,7 +42,7 @@ const Technologies = () => {
             Experience with Redux Thunk, Redux Saga, API Context, Reducers
           </p>
         </StateDev>
-        <UIDev ref={techRef} className={`${isTechVisible ? 'slide-left-ui' : ''}`}>
+        <UIDev className={`${isTechVisible ? 'slide-left-ui' : ''}`}>
           <UIDevTitle>
             <DiCss3/>
             <h3>
