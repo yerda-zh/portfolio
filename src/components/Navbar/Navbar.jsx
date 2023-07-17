@@ -16,6 +16,9 @@ import {
 } from "./navbar.styles";
 import { useState } from 'react';
 
+import '../../animations/animation.css';
+
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -46,7 +49,7 @@ const Navbar = () => {
       <SmallScreenContainer>
         <MenuIcon onClick={() => setToggleMenu(true)}/>
         {toggleMenu && (
-          <SmallScreen>
+          <SmallScreen className={`${toggleMenu ? 'navbar-slide-left' : ''}`}>
             <CloseMenu onClick={()=> setToggleMenu(false)}/>
             <SmallScreenLinks>
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>

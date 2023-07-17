@@ -14,6 +14,7 @@ export const Nav = styled.nav`
     align-items: center;
     padding: 1rem 2rem;
     background: var(--color-navy);
+    max-width: 100%!important; height: auto; overflow: hidden!important;
     @media screen and (max-width: 640px) {
         padding: 1rem;
     }
@@ -195,31 +196,6 @@ export const SmallScreen = styled.div`
     opacity: 0.95;
     transition: .5s ease;
     flex-direction: column;
-
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-    @-webkit-keyframes slide-left {
-        0% {
-            -webkit-transform: translateX(100px);
-                    transform: translateX(100px);
-        }
-        100% {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-    }
-    @keyframes slide-left {
-        0% {
-            -webkit-transform: translateX(200px);
-                    transform: translateX(200px);
-        }
-        100% {
-            -webkit-transform: translateX(0);
-                    transform: translateX(0);
-        }
-    }
-
 `;
 
 export const MenuIcon = styled(HiMenuAlt3)`
@@ -243,7 +219,7 @@ export const SmallScreenLinks = styled.ul`
         margin: 2rem;
         cursor: pointer;
         color: var(--color-white);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         
         &:hover {
