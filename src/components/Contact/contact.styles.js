@@ -91,6 +91,7 @@ export const GetInTouchContainer = styled.div`
     button {
         font-weight: 700;
         width: 100%;
+        
         color: #000;
         background-color: #fff;
         font-family: var(--font-base);

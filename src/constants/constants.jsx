@@ -19,7 +19,7 @@ export const projects = [
         imgUrl:"/images/crwn.png",
         title:"Crown Clothing",
         description:"As you land on the homepage, you'll be greeted by a captivating display of the latest fashion collections, featuring a seamless blend of high-quality imagery and intuitive design. The user-friendly interface makes it effortless for you to navigate through various sections and find exactly what you're looking for.",
-        tech:["React", "Javascript", "Firebase", "Redux", "Styled Components"],
+        tech:["React", "Javascript", "Firebase", "Redux", "Styled Components", "Stripe"],
         view:"https://clothingbrand.netlify.app/",
         source:"https://github.com/yerda-zh/clothing-brand"
     },
