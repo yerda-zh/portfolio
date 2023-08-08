@@ -1,7 +1,7 @@
 import {TechDiv, TechTitle, TechContainer, FrontDev, FrontDevTitle, StateDev, StateDevTitle, UIDev, UIDevTitle, TitleDivider, } from './technologies.styles';
 import {FaReact} from 'react-icons/fa';
 import {SiRedux} from 'react-icons/si';
-import {DiCss3} from 'react-icons/di';
+import {FaDatabase} from 'react-icons/fa';
 import '../../animations/animation.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -28,7 +28,7 @@ const Technologies = () => {
             </h3>
           </FrontDevTitle>
           <p>
-            Experience with React, HTML-5, Javascript
+            Experience with React, HTML-5, Javascript, CSS-3, SCSS, Styled Components, Tailwind
           </p>
         </FrontDev>
         <StateDev className={`${isTechVisible ? 'slide-left-state' : ''}`}>
@@ -39,18 +39,18 @@ const Technologies = () => {
             </h3>
           </StateDevTitle>
           <p>
-            Experience with Redux Thunk, Redux Saga, API Context, Reducers
+            Experience with Redux Thunk, Redux Saga, Redux Toolkit, API Context, Reducers
           </p>
         </StateDev>
         <UIDev className={`${isTechVisible ? 'slide-left-ui' : ''}`}>
           <UIDevTitle>
-            <DiCss3/>
+            <FaDatabase/>
             <h3>
-              Design
+              Back-End
             </h3> 
           </UIDevTitle>
           <p>
-            Experience with CSS-3, SCSS, Styled Components, Tailwind, Bootstrap
+            Experience with Node, Express, RESTful APIs, Bcrypt, PostgreSQL, Knex
           </p>
         </UIDev>
       </TechDiv>

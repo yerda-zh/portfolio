@@ -5,6 +5,7 @@ import { FaDiscord } from 'react-icons/fa';
 import { PiLightningFill } from "react-icons/pi";
 import {RxCross2} from 'react-icons/rx';
 import { HiMenuAlt3 } from 'react-icons/hi';
+import { BiLogoLinkedin } from 'react-icons/bi';
 
 // Navbar
 export const Nav = styled.nav`
@@ -114,6 +115,11 @@ export const DiscordIcon = styled(FaDiscord)`
 	z-index: 1;
 	transition: 0.2s ease-in-out;
 `;
+export const LinkedInIcon = styled(BiLogoLinkedin)`
+    font-size: 1.4rem;
+	z-index: 1;
+	transition: 0.2s ease-in-out;
+`;
 
 export const SocialIcon = styled.a`
     margin-right: 1.7rem;
@@ -151,6 +157,9 @@ export const SocialIcon = styled.a`
     &:hover ${DiscordIcon} {
         color: var(--color-navy);
     }
+    &:hover ${LinkedInIcon} {
+        color: var(--color-navy);
+    }
 
     @media screen and (max-width: 1024px) {
         width: 35px;
@@ -165,8 +174,8 @@ export const SocialIcon = styled.a`
     @media screen and (max-width: 450px) {
         width: 30px;
         height: 30px;
-        padding: 0.3rem;
-        margin-right: 0.3rem;
+        padding: 0.4rem;
+        margin-right: 0.5rem;
 
         &::before {
             width: 30px;

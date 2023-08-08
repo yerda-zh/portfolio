@@ -63,7 +63,8 @@ export const GetInTouchContainer = styled.div`
 
     input, textarea{
         width: 100%;
-        background: rgba(166, 177, 225, 0.6);
+        background: rgba(126, 141, 255, 0.2);
+        color: #A6B1FF;
         border: 1px solid rgba(255, 255, 255, 0.6);
         border-radius: 15px;
         padding: 1.2rem 1.6rem;
@@ -73,7 +74,7 @@ export const GetInTouchContainer = styled.div`
         transition: 0.2s ease-in-out;
 
         &::placeholder {
-            color: #fff;
+            color: rgba(255, 255, 255, 0.7);
             font-weight: 400;
         }
         &:focus::placeholder {

@@ -86,7 +86,7 @@ export const TechContainer = styled.ul`
 
 export const TechItem = styled.li`
     font-size: 1.1rem;
-    margin: .4rem;
+    margin: .3rem;
     font-weight: bold;
     color: var(--color-m-purple);
 

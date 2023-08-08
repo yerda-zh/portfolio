@@ -3,6 +3,7 @@ import { PiLightningFill } from "react-icons/pi";
 import { AiFillGithub } from 'react-icons/ai';
 import { SiUpwork } from 'react-icons/si';
 import { FaDiscord } from 'react-icons/fa';
+import { BiLogoLinkedin } from 'react-icons/bi';
 
 export const FooterContainer = styled.div`
     color: #fff;
@@ -86,6 +87,11 @@ export const DiscordIcon = styled(FaDiscord)`
 	z-index: 1;
 	transition: 0.2s ease-in-out;
 `;
+export const LinkedInIcon = styled(BiLogoLinkedin)`
+    font-size: 1.4rem;
+	z-index: 1;
+	transition: 0.2s ease-in-out;
+`;
 
 export const SocialIcon = styled.a`
     margin-right: 1.7rem;
@@ -123,6 +129,9 @@ export const SocialIcon = styled.a`
     &:hover ${DiscordIcon} {
         color: var(--color-navy);
     }
+    &:hover ${LinkedInIcon} {
+        color: var(--color-navy);
+    }
 
     @media screen and (max-width: 1024px) {
         width: 35px;
@@ -137,8 +146,8 @@ export const SocialIcon = styled.a`
     @media screen and (max-width: 450px) {
         width: 30px;
         height: 30px;
-        padding: 0.3rem;
-        margin-right: 0.3rem;
+        padding: 0.4rem;
+        margin-right: 0.5rem;
 
         &::before {
             width: 30px;

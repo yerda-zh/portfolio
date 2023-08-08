@@ -66,7 +66,6 @@ export const TitleDivider = styled.div`
 export const TechDiv = styled.div`
     display: grid;
     grid-template-columns: 1fr 1.1fr 1fr;
-    
     margin: 0 10rem;
     
     h3 {
@@ -74,7 +73,7 @@ export const TechDiv = styled.div`
         font-weight: bold;
     }
     p {
-        margin-top: 1rem;
+        margin: 1rem 0;
         font-size: .95rem;
         text-align: center;
     }
