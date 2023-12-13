@@ -3,7 +3,7 @@ export const projects = [
         imgUrl:"/images/legionary.png",
         title:"Legionary",
         description:"Legionary was conceived to address the common struggle of finding a suitable workout routine that caters to specific fitness objectives and preferences. Leveraging the power of the OpenAI API, this project seeks to revolutionize the way people approach fitness by offering a dynamic and personalized solution to the age-old question: What workout routine is right for me?",
-        tech:["Next", "Redux Toolkit", "Node", "Express", "PostgreSQL", "Styled Components", "Knex", "Bcrypt", "Cors"],
+        tech:["Next", "Redux Toolkit", "Node", "Express", "PostgreSQL", "Styled Components", "Knex", "Bcrypt", "Cors", "OpenAI API"],
         view:"https://legionary.vercel.app/",
         source:"https://github.com/yerda-zh/legionary"
     },
@@ -11,7 +11,7 @@ export const projects = [
         imgUrl:"/images/sharptech.png",
         title:"SharpTech AI",
         description:"I integrated advanced AI technology using the Clarifai API to detect and identify celebrities from images. The user-friendly interface lets you effortlessly upload picture URLs for instant analysis. Powered by a Node.js and Express server and backed by a PostgreSQL database, the platform ensures fast and secure performance.",
-        tech:["React", "Node", "Express", "PostgreSQL", "SCSS", "Knex", "Bcrypt", "Cors"],
+        tech:["React", "Node", "Express", "PostgreSQL", "SCSS", "Knex", "Bcrypt", "Cors", "Clarifai API"],
         view:"https://github.com/yerda-zh/photo-recognition",
         source:"https://sharptechai.onrender.com/"
     },
