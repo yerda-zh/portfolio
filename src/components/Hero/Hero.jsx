@@ -14,7 +14,7 @@ const Hero = () => {
           Yerdaulet Zhumay
         </h1>
         <p>
-          As a Web Developer, I take pride in crafting stunning and
+          As a Full Stack Software Developer, I take pride in crafting stunning and
           immersive digital experiences that captivate and engage users.
         </p>
         <div>

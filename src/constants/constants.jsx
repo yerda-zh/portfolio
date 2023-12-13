@@ -1,9 +1,17 @@
 export const projects = [
     {
+        imgUrl:"/images/legionary.png",
+        title:"Legionary",
+        description:"Legionary was conceived to address the common struggle of finding a suitable workout routine that caters to specific fitness objectives and preferences. Leveraging the power of the OpenAI API, this project seeks to revolutionize the way people approach fitness by offering a dynamic and personalized solution to the age-old question: What workout routine is right for me?",
+        tech:["Next", "Redux Toolkit", "Node", "Express", "PostgreSQL", "Styled Components", "Knex", "Bcrypt", "Cors"],
+        view:"https://legionary.vercel.app/",
+        source:"https://github.com/yerda-zh/legionary"
+    },
+    {
         imgUrl:"/images/sharptech.png",
         title:"SharpTech AI",
         description:"I integrated advanced AI technology using the Clarifai API to detect and identify celebrities from images. The user-friendly interface lets you effortlessly upload picture URLs for instant analysis. Powered by a Node.js and Express server and backed by a PostgreSQL database, the platform ensures fast and secure performance.",
-        tech:["React", "Node", "Express", "PostgreSQL", "SCSS", "Knex"],
+        tech:["React", "Node", "Express", "PostgreSQL", "SCSS", "Knex", "Bcrypt", "Cors"],
         view:"https://github.com/yerda-zh/photo-recognition",
         source:"https://sharptechai.onrender.com/"
     },
@@ -23,12 +31,4 @@ export const projects = [
         view:"https://yerda-zh.github.io/gericht-restaurant/",
         source:"https://github.com/yerda-zh/gericht-restaurant"
     },
-    {
-        imgUrl:"/images/gpt4.png",
-        title:"Chat GPT-4",
-        description:"The website offers a brief introduction to Chat GPT-4, highlighting its key features and potential applications. From there, you can dive deeper into the various sections of the website, each dedicated to a specific aspect of this powerful language model.",
-        tech:["React", "Javascript", "CSS-3"],
-        view:"https://yerda-zh.github.io/chat-gpt-4/",
-        source:"https://github.com/yerda-zh/chat-gpt-4"
-    }
 ]

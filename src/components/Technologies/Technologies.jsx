@@ -28,7 +28,7 @@ const Technologies = () => {
             </h3>
           </FrontDevTitle>
           <p>
-            Experience with React, HTML-5, Javascript, CSS-3, SCSS, Styled Components, Tailwind
+            Experience with React, Next.JS, HTML-5, Javascript, CSS-3, SCSS, Styled Components, Tailwind
           </p>
         </FrontDev>
         <StateDev className={`${isTechVisible ? 'slide-left-state' : ''}`}>
@@ -50,7 +50,7 @@ const Technologies = () => {
             </h3> 
           </UIDevTitle>
           <p>
-            Experience with Node, Express, RESTful APIs, Bcrypt, PostgreSQL, Knex
+            Experience with Node, Express, RESTful APIs, Bcrypt, PostgreSQL, Knex, Cors
           </p>
         </UIDev>
       </TechDiv>
