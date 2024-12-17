@@ -7,7 +7,6 @@ import {
   SocialIconsContainer,
   SocialIcon,
   GithubIcon,
-  UpworkIcon,
   DiscordIcon,
   Copyright,
   LinkedInIcon
@@ -26,9 +25,6 @@ const Footer = () => {
         <SocialIconsContainer>
           <SocialIcon href="https://github.com/yerda-zh">
             <GithubIcon />
-          </SocialIcon>
-          <SocialIcon href="https://www.upwork.com/freelancers/~01b0805c41b72f5a30?viewMode=1">
-            <UpworkIcon />
           </SocialIcon>
           <SocialIcon href="https://www.linkedin.com/in/yerdaulet-zh/">
             <LinkedInIcon />

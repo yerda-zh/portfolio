@@ -13,7 +13,7 @@
 }
 
 .app__bg {
-  background: url('./assets/banner.jpg');
+  background: url('./assets/banner.png');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;

@@ -65,7 +65,7 @@ export const TitleDivider = styled.div`
 `;
 export const TechDiv = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1.1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     margin: 0 10rem;
     
     h3 {
@@ -78,7 +78,7 @@ export const TechDiv = styled.div`
         text-align: center;
     }
 
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: 1400px) {
         display: flex;
         flex-direction: column;
         justify-content: center;

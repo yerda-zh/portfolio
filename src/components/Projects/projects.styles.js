@@ -45,14 +45,21 @@ export const ProjectsDiv = styled.div`
     row-gap: 2rem;
     margin: 0 7rem;
 
-    @media screen and (min-width: 2192px) {
+    @media screen and (min-width: 2000px) {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: 1900px) {
+        grid-template-columns: repeat(2, minmax(400px, 1fr));
     }
 
     @media screen and (max-width: 1200px) {
         margin: 0 1rem;
         padding: 1rem;
         padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
     }
     @media screen and (max-width: 540px) {
         margin: 0 .5rem;

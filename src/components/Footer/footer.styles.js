@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { PiLightningFill } from "react-icons/pi";
 import { AiFillGithub } from 'react-icons/ai';
-import { SiUpwork } from 'react-icons/si';
 import { FaDiscord } from 'react-icons/fa';
 import { BiLogoLinkedin } from 'react-icons/bi';
 
@@ -76,12 +75,6 @@ export const GithubIcon = styled(AiFillGithub)`
 	z-index: 1;
 	transition: 0.2s ease-in-out;
 `;
-export const UpworkIcon = styled(SiUpwork)`
-    margin-top: 0.2rem;
-    font-size: 1.5rem;
-	z-index: 1;
-	transition: 0.2s ease-in-out;
-`;
 export const DiscordIcon = styled(FaDiscord)`
     font-size: 1.6rem;
 	z-index: 1;
@@ -121,9 +114,6 @@ export const SocialIcon = styled.a`
         transform: scale(1);
     }
     &:hover ${GithubIcon} {
-        color: var(--color-navy);
-    }
-    &:hover ${UpworkIcon} {
         color: var(--color-navy);
     }
     &:hover ${DiscordIcon} {

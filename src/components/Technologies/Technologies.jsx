@@ -1,7 +1,8 @@
 import {TechDiv, TechTitle, TechContainer, FrontDev, FrontDevTitle, StateDev, StateDevTitle, UIDev, UIDevTitle, TitleDivider, } from './technologies.styles';
 import {FaReact} from 'react-icons/fa';
-import {SiRedux} from 'react-icons/si';
-import {FaDatabase} from 'react-icons/fa';
+import { MdLanguage } from "react-icons/md";
+import { FaTools } from "react-icons/fa";
+import { IoLibrary } from "react-icons/io5";
 import '../../animations/animation.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -22,35 +23,46 @@ const Technologies = () => {
       <TechDiv ref={techRef} >
         <FrontDev className={`${isTechVisible ? 'slide-left-front' : ''}`}>
           <FrontDevTitle>
-            <FaReact/>
+            <MdLanguage/>
             <h3>
-              Front-end
+              Languages
             </h3>
           </FrontDevTitle>
           <p>
-            Experience with React, Next.JS, HTML-5, Javascript, CSS-3, SCSS, Styled Components, Tailwind
+            Python, JavaScript, TypeScript, SQL (Postgres), HTML/CSS, Java, C++
           </p>
         </FrontDev>
         <StateDev className={`${isTechVisible ? 'slide-left-state' : ''}`}>
           <StateDevTitle>
-            <SiRedux/>
+            <FaReact/>
             <h3>
-              State Management
+              Frameworks
             </h3>
           </StateDevTitle>
           <p>
-            Experience with Redux Thunk, Redux Saga, Redux Toolkit, API Context, Reducers
+            React, Next, Node, Express, Material-UI, Vite
           </p>
         </StateDev>
         <UIDev className={`${isTechVisible ? 'slide-left-ui' : ''}`}>
           <UIDevTitle>
-            <FaDatabase/>
+            <FaTools/>
             <h3>
-              Back-End
+              Developer Tools
             </h3> 
           </UIDevTitle>
           <p>
-            Experience with Node, Express, RESTful APIs, Bcrypt, PostgreSQL, Knex, Cors
+            Git, Gitlab, Firebase, Docker, VS Code, WebStorm
+          </p>
+        </UIDev>
+        <UIDev className={`${isTechVisible ? 'slide-left-libraries' : ''}`}>
+          <UIDevTitle>
+            <IoLibrary/>
+            <h3>
+              Libraries
+            </h3> 
+          </UIDevTitle>
+          <p>
+            Zustand, React Query, Axios, DayJS, Redux Toolkit, Styled Components (CSS-in-JS), SCSS, Bcrypt
           </p>
         </UIDev>
       </TechDiv>
